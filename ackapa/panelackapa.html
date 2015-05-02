@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style> 
+#panel, #flip {
+	font-family: arial;
+    padding: 5px;
+    text-align: center;
+    background-color: #3ad7ff;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Bu bölgeye her tıklandığında panel aşağı ve yukarı hareket edecektir</div>
+<div id="panel">Merhaba Dünya!</div>
+
+</body>
+</html>
